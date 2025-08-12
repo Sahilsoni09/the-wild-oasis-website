@@ -6,8 +6,7 @@ export const metadata = {
 export default function page() {
   return (
     <div>
-      <Navigation />
-      <h1> cabins page</h1>;
+      <h1> cabins page</h1>
     </div>
   );
 }
