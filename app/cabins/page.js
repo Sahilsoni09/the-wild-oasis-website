@@ -1,5 +1,8 @@
-import Navigation from "../components/Navigation";
+import Navigation from "@/app/_components/Navigation";
 
+export const metadata = {
+  title: "Cabins",
+};
 export default function page() {
   return (
     <div>
