@@ -1,3 +1,4 @@
+"use client";
 function ReservationForm({ cabin }) {
   // CHANGE
   const { maxCapacity } = cabin;
