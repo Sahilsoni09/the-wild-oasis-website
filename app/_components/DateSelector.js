@@ -28,7 +28,7 @@ function DateSelector({ settings, bookedDates, cabin }) {
   return (
     <div className="flex flex-col justify-between">
       <DayPicker
-        className="pt-12 place-self-center"
+        className="pt-12 place-self-center scale-75"
         mode="range"
         onSelect={setRange}
         selected={range}
@@ -39,6 +39,7 @@ function DateSelector({ settings, bookedDates, cabin }) {
         toYear={new Date().getFullYear() + 5}
         captionLayout="dropdown"
         numberOfMonths={2}
+        classNames={{ months: "flex flex-row gap-1" }}
       />
 
       <div className="flex items-center justify-between px-8 bg-accent-500 text-primary-800 h-[72px]">
