@@ -102,6 +102,7 @@ export async function getBookedDatesByCabinId(cabinId) {
   today = today.toISOString();
 
   // Getting all bookings
+
   const { data, error } = await supabase
     .from("bookings")
     .select("*")
