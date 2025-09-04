@@ -1,13 +1,13 @@
 "use client";
 
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 function Filter() {
-  const searchParams = new URLSearchParams();
+  const searchParams = new useSearchParams();
   const router = useRouter();
   const pathname = usePathname();
 
-  const activeFilter = searchParams.get("capacity") || "all";
+  const activeFilter = searchParams.get("capacity") ?? "all";
 
   function handleFilter(filter) {
     const params = new URLSearchParams(searchParams);
